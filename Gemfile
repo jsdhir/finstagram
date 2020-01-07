@@ -13,7 +13,11 @@ gem 'puma'
 gem 'tux'
 
 group :development, :test do
-  gem 'pry'
   gem 'shotgun'
   gem 'sqlite3', '~> 1.3.6'
+end
+
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
 end
